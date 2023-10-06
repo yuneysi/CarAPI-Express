@@ -1,0 +1,19 @@
+html
+    head
+        title=title
+    body
+        h1 Cars
+        if cars.length > 0
+            table
+
+                th Model
+                th YearBuilt
+                th Price
+                for car in cars
+                    tr
+                      td= car.model
+                      td= car.yearBuilt
+                      td= car.price
+        else
+          h1 No cars
+

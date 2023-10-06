@@ -1,0 +1,19 @@
+html
+    head
+        title=title
+    body
+        h1 Manufacturer
+        if manufacturers.length > 0
+            table
+
+                th Name
+                th FoundingYear
+                th Headquarters
+                for manufacturer in manufacturers
+                    tr
+                      td= manufacturer.name
+                      td= manufacturer.foundingYear
+                      td= manufacturer.headquarters
+        else
+          h1 No manufacturer
+
